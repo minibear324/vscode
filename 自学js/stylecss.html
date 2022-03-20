@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
+    <!-- 改变 HTML 样式 HTML DOM 允许 JavaScript 改变 HTML元素的样式。如何改变 HTML 元素的样式呢？ 
+    语法: Object.style.property=new style;
+    注意:Object是获取的元素对象，如通过document.getElementById("id")获取的元素。
+    基本属性表（property）:
+    注意:该表只是一小部分CSS样式属性，其它样式也可以通过该方法设置和修改。 -->
+    <title>style样式</title>
+  </head>
+  <body>
+    <h2 id="con">I love JavaScript</h2>
+    <p>JavaScript使网页显示动态效果并实现与用户交互功能。</p>
+    <script type="text/javascript">
+      var mychar= document.getElementById("con");
+      mychar.style.color='red';
+      mychar.style.backgroundColor='#CCC';
+      mychar.style.width=300px;
+    </script>
+  </body>
+</html>
