@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        /* 
+        强制类型转化：
+        - 是指将一个数据类型强制转换为其他的数据类型
+        - 类型转化主要指，讲其他的数据类型转化为：
+            string、number、Boolean
+        */
+
+        /* 
+        将其他的数据类型转换为string
+        方法一：
+            - 调用被转换数据类型的tostring()方法
+            - 该方法不会影响到原变量，它会将转换的结果返回
+            - 但是注意：null和undefined这两个只没有tostring()方法，如果调用此方法，则会报错
+
+        方法二：
+            - 调用string()函数，并将被转换的数据作为参数传递给函数
+            - 使用string()函数做强制类型转换时，对于number和Boolean实际上就是调用tostring()方法，但是对于null和undefined，就不会调用tostring()方法，它会将null直接转换成"null",将unddfined直接转换成"undefined"
+        */
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

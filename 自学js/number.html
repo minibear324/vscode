@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script>
+      /*
+       * 在js中的所有的数值都是number类型
+       * 包括整数浮点数（小数）
+       * JS中可以表示的数字的最大值
+       * Number.MAX_VALUE
+       *  1.7976931348e+308
+       * Number.MIN_VALUE大于0的最小值
+       * 5e-324
+       * 如果使用Number表示的数字超过了最大值，则会返回一个Infinity，即表示无穷
+       *
+       * typeof用来检查一个数值的类型
+       * NaN是一个特殊的数字，表示Not A Number
+       * 使用typeof检查一个NaN也会返回number
+       * 
+       * 如果使用JS进行浮点运算，可能得到一个不精确的结果
+       * 所以千万不要使用JS进行对精确度要求比较高的运算
+       */
+      var number = NaN;
+      console.log(typeof number);
+    </script>
+  </head>
+  <body></body>
+</html>
