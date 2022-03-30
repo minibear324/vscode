@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>加载事件</title>
+    <script type="text/javascript">
+      function message() {
+        alert("加载中，请稍等…");
+      }
+    </script>
+  </head>
+  <!-- 事件会在页面加载完成后，立即发生，同时执行被调用的程序。
+注意：1. 加载页面时，触发onload事件，事件写在<body>标签内。
+
+      2. 此节的加载页面，可理解为打开一个新页面时。
+如下代码,当加载一个新页面时，弹出对话框“加载中，请稍等…”。 -->
+  <body onload="message()">
+    欢迎学习JavaScript。
+  </body>
+</html>

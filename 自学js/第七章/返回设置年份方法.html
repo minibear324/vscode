@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>获得年份</title>
+    <script type="text/javascript">
+      var mydate = new Date();
+      document.write(mydate+"<br>");//输出当前时间
+      //结果格式依次为：星期、月、日、年、时、分、秒、时区。(火狐浏览器)
+      var myyear = mydate.getFullYear();//get/setFullYear()返回/设置年份，用四位数表示。
+      document.write("年份:" + myyear);
+    </script>
+  </head>
+  <body></body>
+</html>
