@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>屏幕分辨率的高和宽</title>
+  </head>
+  <body>
+    <script type="text/javascript">
+      /* 1. screen.availWidth 属性返回访问者屏幕的宽度，以像素计，减去界面特性，比如任务栏。
+      2. screen.availHeight 属性返回访问者屏幕的高度，以像素计，减去界面特性，比如任务栏。
+      注意:
+      不同系统的任务栏默认高度不一样，及任务栏的位置可在屏幕上下左右任何位置，所以有可能可用宽度和高度不一样。 */
+      document.write("可用宽度：" + screen.availWidth + "<br>");
+      document.write("可用高度：" + screen.availHeight);
+    </script>
+  </body>
+</html>

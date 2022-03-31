@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>定时器</title>
+    <script type="text/javascript">
+      var attime;
+      function clock() {
+        var time = new Date();
+        //获取时分秒
+        var hour = time.getHours();
+        // 是显示的效果前面能加0，例如09，以下同例
+        if (hour < 10) {
+          hour = "0" + hour;
+        }
+        var minu = time.getMinutes();
+        if (minu < 10) {
+          minu = "0" + minu;
+        }
+        var sec = time.getSeconds();
+        if (sec < 10) {
+          sec = "0" + sec;
+        }
+        attime = hour + ":" + minu + ":" + sec;
+        document.getElementById("clock").value = attime;
+      }
+      attime = setInterval(clock, 1000);
+    </script>
+  </head>
+  <body>
+    <form>
+      <input type="text" id="clock" size="50" />
+    </form>
+  </body>
+</html>
