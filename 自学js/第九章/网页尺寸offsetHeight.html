@@ -1,0 +1,20 @@
+<!DOCTYPE HTML>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"> 
+</head>
+<body>
+ <script type="text/javascript">
+     /* 网页尺寸offsetHeight
+offsetHeight和offsetWidth，获取网页内容高度和宽度(包括滚动条等边线，会随窗口的显示大小改变)。
+
+一、值
+
+offsetHeight = clientHeight + 滚动条 + 边框。 */
+var w= document.documentElement.offsetWidth
+    || document.body.offsetWidth;
+var h= document.documentElement.offsetHeight
+    || document.body.offsetHeight;
+     document.write("窗口的宽度为" + w + "<br>" + "窗口的高度为" + h);
+</script>
+</body>
+</html>

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  </head>
+  <body>
+    <script type="text/javascript">
+        /* 网页尺寸scrollHeight
+scrollHeight和scrollWidth，获取网页内容高度和宽度。
+
+一、针对IE、Opera:
+
+scrollHeight 是网页内容实际高度，可以小于 clientHeight。
+
+二、针对NS、FF:
+
+scrollHeight 是网页内容高度，不过最小值是 clientHeight。也就是说网页内容实际高度小于 clientHeight 时，scrollHeight 返回 clientHeight 。 */
+      var w = document.documentElement.scrollWidth || document.body.scrollWidth;
+      var h =
+        document.documentElement.scrollHeight || document.body.scrollHeight;
+      document.write("窗口的宽度为" + w + "<br>" + "窗口的高度为" + h);
+    </script>
+  </body>
+</html>

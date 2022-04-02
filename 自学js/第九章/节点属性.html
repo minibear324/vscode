@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>节点属性</title>
+  </head>
+  <body>
+    <ul>
+      <li>javascript</li>
+      <li>HTML/CSS</li>
+      <li>jQuery</li>
+    </ul>
+    <script type="text/javascript">
+      var lists = doucment.getElementsByTagName("li");
+      document.write(lists.length);
+      for (var i = 0; i < lists.length; i++) {
+        document.write("元素节点的内容" + "<br>");
+        document.write(lists[i].nodeName);
+        document.write(lists[i].nodeValue);
+        document.write(lists[i].nodeType);
+      }
+    </script>
+  </body>
+</html>

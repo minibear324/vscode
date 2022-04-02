@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>无标题文档</title>
+  </head>
+  <body>
+    <ul id="test">
+      <li>JavaScript</li>
+      <li>HTML</li>
+    </ul>
+
+    <script type="text/javascript">
+        /* 插入节点appendChild()
+在指定节点的最后一个子节点列表之后添加一个新的子节点。
+
+语法:
+
+appendChild(newnode)
+参数:
+
+newnode：指定追加的节点。 */
+      var otest = document.getElementById("test");
+      var newnode = document.createElement("li");
+      var newtext = document.createTextNode("PHP");
+      newnode.appendChild(newtext);
+      otest.appendChild(newnode);
+    </script>
+  </body>
+</html>
